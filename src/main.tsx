@@ -2,8 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css';
+
 import Home from './pages/home.tsx';
+import Demo1 from './pages/demo1.tsx';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+import './index.css';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/home',
     element: <Home />,
+  },
+  {
+    path: '/demo1',
+    element: <Demo1 />,
   },
 ]);
 
