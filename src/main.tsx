@@ -12,6 +12,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import './index.css';
+import DemoComps from './pages/demoComps.tsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/demo1',
     element: <Demo1 />,
+  },
+  {
+    path: '/demo-componentes',
+    element: <DemoComps />,
   },
 ]);
 
